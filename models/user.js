@@ -11,9 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      this.ads = this.hasMany(models.Ad, {foreignKey: 'advertiser'});
     }
-  };
+  }
   User.init({
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,

@@ -19,8 +19,8 @@ module.exports = {
       firstName: 'Moamen',
       lastName: 'Abdelwahed',
       email: 'moomen.abdelwahed@gmail.com',
-      password: bcrypt.hashSync('123456', 8),
-      token: jwt.sign({id: 1}, process.env.JWT_SECRET, {
+      password: bcrypt.hashSync('123456', 10),
+      token: jwt.sign({email: "moomen.abdelwahed@gmail.com"}, process.env.JWT_SECRET, {
         algorithm: "HS256"
       }),
       createdAt: new Date()
